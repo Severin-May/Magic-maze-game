@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=""/>
+    <link rel="stylesheet" href="indexInitial.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Instructions of the game: </label>
+        <button id="btnInstructions">Instructions</button>
+        <div class="instrContent"><p>
+            This is a Magic Maze Game. There can be from 1 up to 4 players in a game.
+            There are 49 rooms on the board and 1 additional room for shifting the changeable rows and columns (indicated with arrow). 
+            Each room has maximum 1 treasure in it. 
+            There are 24 cards where the treasure image is depicted.The cards will be evenly distributed among the players. 
+            Each player is shown one card at a time. 
+            And the goal of each player is to shift the arrow-signed rows and columns using the extra room to reach the room where treasure from their card is hidden.
+            After, the second card is revealed and so on. 
+            Winner is the player, who collects all the treasures from his cards and returns back to his starting point. Enjoy it!
+        </p></div>
+    </div>
+    <div>
+        <p>Please enter the number of players (1-4)</p>
+        <label>Number of players: </label>
+        <input id="numOfPlayers" type="text">
+        <button id="setNumofPlayers"><b>Set</b></button>
+        <br>
+        <p id="messageToNumOfCards"></p>
+        <label>Number of cards: </label>
+        <input id="numOfCards" type="text">
+        <button id="setNumofCards"><b>Set</b></button>
+        <p id="textNumOfCards"></p>
+        <br>
+        <div id="gameDetails"><p></p></div>
+        <button id="btnStart"><b>New Game</b></button>
+
+    </div>
+    <div id="leftover"></div>
+    <div id="arrowBtnsDiv"></div>
+    <div id="boardDiv">
+        <table id="board" class="board"></table>
+    </div>
+    
+    <script type="text/javascript" src="player.js"></script>
+    <script type="text/javascript" src="model.js"></script>
+    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="arrows.js"></script>
+    <script type="text/javascript" src="shift.js"></script>
+</body>
+</html>

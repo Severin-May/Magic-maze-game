@@ -1,0 +1,106 @@
+.board {
+    border: 1px solid #4f0081;
+    padding: 10;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    position: relative;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    line-height: 0; 
+    position: relative;
+}
+
+#arrowBtnsDiv {
+    position: absolute;
+    display: block;
+}
+
+.arrows {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    align-content: center;
+    background-image: url("arrow.png");
+    background-position: center;
+    background-size:100%; 
+    background-repeat: no-repeat;
+}
+
+.arrowsUp {
+    margin-left: 19px;
+    margin-right: 35px;
+    bottom: 303px;
+    left: 475px;
+    right: 680px;
+    transform: rotate(180deg);
+}
+
+.arrowsLeft {
+    display: block;
+    left: 790px;
+    right: 100px;
+    top: 5px;
+    margin-top: 49px;
+    margin-bottom: 53px;
+    margin-left: 15px;
+    margin-right: 5px;
+    transform: rotate(90deg);
+}
+
+.arrowsRight {
+    display: block;
+    left: 384px;
+    bottom: 304px;
+    margin-top: 47px;
+    margin-bottom: 53px;
+    margin-left: 8px;
+    margin-right: 10px;
+    transform: rotate(270deg);
+}  
+
+.arrowsDown {
+    transform: rotate(0deg);
+    margin-left: 20px;
+    margin-right: 33px;
+    bottom: 0px;
+    left: 475px;
+    right: 680px;
+    background-image: "arrow.png"; 
+}
+
+#leftover > img {
+    border: 3px solid grey;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#leftover {
+    font-size: 10px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.roomContent {
+    position: absolute;
+    font-size: 10px;
+    z-index: 300;
+    bottom: 30px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.player {
+    z-index: -1;    
+}
